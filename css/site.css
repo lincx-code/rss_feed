@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+/* ======================================================
+RESET DEFAULT STYLES
+====================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, main, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ======================================================
+BASICS
+====================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+html, body {
+    width: 100%;
+    min-width: 1024px;
+	height: 100%;
+    background: #ffffff;
+    color: #555555;
+    font-size: 1rem;
+    font-family: 'Roboto', Arial, Verdana, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    z-index: 9999;
+}
+body{
+	display: flex;
+	flex-direction: column;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 2rem;
+    color: #f05a23;
+    margin: 25px 0 20px 0;
+}
+h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #f05a23;
+}
+h3 {
+    font-size: 1rem;
+    margin: 15px 0;
+}
+p {
+    font-size: 90%;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+img {
+    display: block; 
+    width: 100%;
+    height: auto;
+}
+a {
+    color: #f05a23;
+    text-decoration: none;
+}
+a:hover {
+    color: #f05a23;
+}
+/* ======================================================
+CONTAINERS
+====================================================== */
+main {
+    width: 100%;
+    clear: both;
+}
+.main-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+}
+#rss_news {
+    padding-top: 20px;
+}
+article {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+article:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+p.title {
+    font-size: 120%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+p.date {
+    font-size: 80%;
+    margin-bottom: 10px;
+}
+p.url {
+    margin: 5px 0 0 0;
+    color: #f05a23;
+    font-size: 80%;
+    font-style: italic;
+}
+/* ======================================================
+MOBILE
+====================================================== */
+
+/* FOR ALL SMALLER THAN 1024PX ************************/
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    html, body {
+        min-width: 320px; /*actural size*/
+        max-width: 1024px;
+    }
+    .main-container {
+        width: 95%;
+    }
+    .description {
+        line-height: 140%;
+    }
+    }
+    
+    /* FOR SMALLER THAN 1024PX BUT LARGER THAN 768PX *******************/
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    }
+    
+    /* FOR SMALLER THAN 767PX BUT LARGER THAN 480PX ***/
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+    
+    }
+    
+    /* FOR SMALLER THAN 480PX ************************/
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+    }
